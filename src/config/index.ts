@@ -1,11 +1,11 @@
 function initializeConfig() {
   const config = {
     common: {
-      apiUrl: process.env.REACT_APP_API_UR
+      apiUrl: import.meta.env.VITE_API_URL
     }
   };
   return config;
-};
+}
 
 const config = initializeConfig();
 
