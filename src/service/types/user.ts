@@ -21,6 +21,10 @@ export type Benefits = {
   points?: number;
 };
 
+export type Like = {
+  carId: number;
+};
+
 export type User = {
   id: number;
   name: string;
@@ -43,4 +47,10 @@ export type UserRecommendations = {
   id: number;
   userId: number;
   recommendation?: Recommendation[];
+};
+
+export type UserLikes = {
+  id: number;
+  userId: number;
+  likes?: Like[];
 };
