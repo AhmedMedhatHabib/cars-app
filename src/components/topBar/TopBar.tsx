@@ -4,7 +4,18 @@ import { faBell, faSearch } from '@fortawesome/free-solid-svg-icons';
 import { useTranslation } from 'react-i18next';
 
 function TopBar() {
-  const { t } = useTranslation();
+  const {
+    t,
+    i18n: { language, changeLanguage },
+  } = useTranslation();
+
+  function onChangeLanguage() {
+    if (language === 'ar') {
+      changeLanguage('en');
+    } else {
+      changeLanguage('ar');
+    }
+  }
   const { data, isLoading } = useGetUserByIdQuery(1);
 
   function onGetUserInfo() {
@@ -27,7 +38,7 @@ function TopBar() {
 
   return (
     <div className="px-6 flex justify-between bg-white h-16 shadow">
-      <div className="flex items-center w-80">
+      <div className="flex items-center lg:w-80">
         <div className="relative w-full text-gray-600 focus-within:text-gray-400">
           <span className="absolute inset-y-0 left-0 flex items-center pl-2">
             <button
@@ -47,6 +58,15 @@ function TopBar() {
       </div>
 
       <div className="flex justify-end items-center">
+        <button
+          onClick={onChangeLanguage}
+          className="flex items-center me-4 bg-white hover:bg-gray-100 text-gray-700 rounded"
+        >
+          <span className="border-2 border-gray-700 rounded-md w-8 h-8">
+            {t('crossLanguageID')}
+          </span>
+        </button>
+
         <FontAwesomeIcon className="me-4 text-gray-700" icon={faBell} />
 
         {onGetUserInfo()}
