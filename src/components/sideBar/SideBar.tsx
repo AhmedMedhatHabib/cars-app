@@ -19,7 +19,7 @@ function SideBar({ links }: SideBarProps) {
   }
 
   return (
-    <div className="flex flex-col w-1/6 gap-2 ps-3 pt-3 relative">
+    <div className="flex flex-col w-1/6 gap-2 ps-3 pt-3 relative shadow">
       <div className="flex p-2 h-14 items-center">
         <img src={reactLogo} className="me-2" alt="React logo" />
         <h1 className="font-bold">Motiv.</h1>
@@ -35,7 +35,6 @@ function SideBar({ links }: SideBarProps) {
           <span className="border-2 border-gray-700 rounded-md w-8 h-8">
             {t('crossLanguageID')}
           </span>
-          {/* {t('crossLanguage')} */}
         </button>
       </div>
     </div>

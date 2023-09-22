@@ -2,6 +2,6 @@
   "title": "test",
   "dashboard": "Dashboard",
   "cars": "Cars",
-  "crossLanguage": "العربية",
-  "crossLanguageID": "ع"
+  "crossLanguageID": "ع",
+  "searchPlaceholder": "Search or type"
 }

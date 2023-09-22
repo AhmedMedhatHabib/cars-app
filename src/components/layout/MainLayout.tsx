@@ -12,11 +12,13 @@ const sideBarLinks: SideBarLinkProps[] = [
 
 function MainLayout() {
   return (
-    <div className="flex w-full h-screen gap-4">
+    <div className="flex w-full h-screen">
       <SideBar links={sideBarLinks} />
       <div className="flex flex-col w-full">
         <TopBar />
-        <Outlet />
+        <div className="flex w-full h-full bg-gray-200 overflow-y-auto p-6">
+          <Outlet />
+        </div>
       </div>
     </div>
   );

@@ -2,6 +2,6 @@
   "title": "شسفث",
   "dashboard": "لوحة تحكم",
   "cars": "سيارات",
-  "crossLanguage": "English",
-  "crossLanguageID": "En"
+  "crossLanguageID": "En",
+  "searchPlaceholder": "ابحث أو اكتب"
 }
