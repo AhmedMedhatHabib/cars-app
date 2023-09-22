@@ -6,7 +6,7 @@ export const carsApi = createApi({
   reducerPath: 'cars',
   baseQuery: fetchBaseQuery({ baseUrl: config.common.apiUrl }),
   endpoints: (builder) => ({
-    getCars: builder.query<[Car], null>({
+    getCars: builder.query<[Car], string>({
       query: () => `/cars`,
     }),
   }),
