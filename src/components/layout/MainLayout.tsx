@@ -6,8 +6,8 @@ import { faBorderAll, faCar } from '@fortawesome/free-solid-svg-icons';
 import { MainRoutes } from '../../Routes';
 
 const sideBarLinks: SideBarLinkProps[] = [
-  { icon: faBorderAll, label: 'dashboard', link: MainRoutes.dashboard },
-  { icon: faCar, label: 'cars', link: MainRoutes.cars },
+  { icon: faBorderAll, label: 'dashboard', path: MainRoutes.dashboard },
+  { icon: faCar, label: 'cars', path: MainRoutes.cars },
 ];
 
 function MainLayout() {

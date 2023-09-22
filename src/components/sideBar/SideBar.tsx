@@ -25,7 +25,7 @@ function SideBar({ links }: SideBarProps) {
         <h1 className="font-bold">Motiv.</h1>
       </div>
       {links.map(link => (
-        <SideBarLink {...link} />
+        <SideBarLink key={link.path} {...link} />
       ))}
       <div className="absolute bottom-4">
         <button

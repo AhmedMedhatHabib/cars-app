@@ -4,5 +4,5 @@ import { MainRoutes } from '../../Routes';
 export type SideBarLinkProps = {
   icon: IconProp;
   label: string;
-  link: MainRoutes;
+  path: MainRoutes;
 };
