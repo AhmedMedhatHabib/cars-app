@@ -1,7 +1,7 @@
 import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 import type { User } from '../types';
 import config from '../../config';
-import { UserBenefits, UserUsage } from '../types/user';
+import { UserBenefits, UserRecommendations, UserUsage } from '../types/user';
 
 export const userApi = createApi({
   reducerPath: 'users',
@@ -16,6 +16,9 @@ export const userApi = createApi({
     getUserBenefitsByUserId: builder.query<UserBenefits, number>({
       query: id => `/users/${id}/usage`,
     }),
+    getUserRecommendationsByUserId: builder.query<UserRecommendations, number>({
+      query: id => `/users/${id}/recommendations`,
+    }),
   }),
 });
 
@@ -23,4 +26,5 @@ export const {
   useGetUserByIdQuery,
   useGetUserUsageByUserIdQuery,
   useGetUserBenefitsByUserIdQuery,
+  useGetUserRecommendationsByUserIdQuery,
 } = userApi;

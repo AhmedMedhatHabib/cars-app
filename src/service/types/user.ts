@@ -1,3 +1,5 @@
+import { Recommendation } from './car';
+
 export type Usage = {
   energy?: string;
   range?: string;
@@ -35,4 +37,10 @@ export type UserBenefits = {
   id: number;
   userId: number;
   benefits: Benefits;
+};
+
+export type UserRecommendations = {
+  id: number;
+  userId: number;
+  recommendation?: Recommendation[];
 };
