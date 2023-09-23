@@ -10,7 +10,7 @@ function App() {
   console.log(data, error, isLoading);
 
   return (
-    <div className="w-full">
+    <div className="w-full bg-gray-200">
       <h1 className="text-3xl font-bold underline">title</h1>
       <div>
         <a href="https://vitejs.dev" target="_blank">

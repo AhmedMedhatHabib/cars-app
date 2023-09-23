@@ -12,6 +12,7 @@ import {
 } from 'react-router-dom';
 import { MainRoutes } from './Routes.ts';
 import MainLayout from './components/layout/MainLayout.tsx';
+import Cars from './modules/cars';
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,7 @@ const router = createBrowserRouter([
       },
       {
         path: MainRoutes.cars,
-        element: <App />,
+        element: <Cars />,
       },
     ],
   },
