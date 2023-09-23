@@ -12,7 +12,7 @@ const sideBarLinks: SideBarLinkProps[] = [
 
 function MainLayout() {
   return (
-    <div className="flex w-full h-screen">
+    <div className="flex w-full h-screen max-xs:flex-col-reverse max-xs:justify-between">
       <SideBar links={sideBarLinks} />
       <div className="flex flex-col w-full">
         <TopBar />

@@ -10,7 +10,7 @@ function SideBarLink({ icon, path, label }: SideBarLinkProps) {
     <NavLink
       to={path}
       className={({ isActive }) =>
-        `hover:bg-gray-100 text-gray-700 p-2 rounded max-md:text-center ${
+        `hover:bg-gray-100 text-gray-700 p-2 rounded max-md:text-center max-xs:h-8 max-xs:flex max-xs:self-center ${
           isActive ? 'bg-gray-200' : 'bg-white'
         }`
       }
