@@ -6,7 +6,7 @@ export type Car = {
   seats: number;
   transmission: ['MANUAL' | 'AUTOMATIC'];
   rentPrice: number;
-  liked: boolean;
+  img: string;
 };
 
 export type Recommendation = Car & {
