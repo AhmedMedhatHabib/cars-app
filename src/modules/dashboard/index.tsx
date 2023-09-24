@@ -52,8 +52,7 @@ const colors = ['bg-lime-100', 'bg-cyan-100', 'bg-pink-100'];
 const DashboardPage = () => {
   const { t } = useTranslation();
 
-  const { data: userUsage, isLoading: isLoadingUserUsage } =
-    useGetUserUsageByUserIdQuery(1);
+  const { data: userUsage } = useGetUserUsageByUserIdQuery(1);
   const { data: userRecommendations, isLoading } =
     useGetUserRecommendationsByUserIdQuery(1);
 
