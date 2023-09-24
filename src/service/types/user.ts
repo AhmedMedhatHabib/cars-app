@@ -1,6 +1,7 @@
 import { Recommendation } from './car';
 
 export type Usage = {
+  id: string;
   energy?: string;
   range?: string;
   break_fluid?: string;
@@ -46,7 +47,7 @@ export type UserBenefits = {
 export type UserRecommendations = {
   id: number;
   userId: number;
-  recommendation?: Recommendation[];
+  recommendations?: Recommendation[];
 };
 
 export type UserLikes = {

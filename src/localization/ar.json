@@ -3,5 +3,6 @@
   "dashboard": "لوحة تحكم",
   "cars": "سيارات",
   "crossLanguageID": "En",
-  "searchPlaceholder": "ابحث أو اكتب"
+  "searchPlaceholder": "ابحث أو اكتب",
+  "recommend": "يوصي"
 }

@@ -3,5 +3,6 @@
   "dashboard": "Dashboard",
   "cars": "Cars",
   "crossLanguageID": "ع",
-  "searchPlaceholder": "Search or type"
+  "searchPlaceholder": "Search or type",
+  "recommend": "recommend"
 }

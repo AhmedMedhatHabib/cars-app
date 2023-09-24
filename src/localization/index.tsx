@@ -3,7 +3,7 @@ import { initReactI18next } from 'react-i18next';
 
 import arTranslation from './ar.json';
 import enTranslation from './en.json';
-
+document.documentElement.dir = 'ltr';
 i18n.use(initReactI18next).init({
   debug: true,
   resources: {
